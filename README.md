@@ -33,12 +33,12 @@ A 32-bit ALU written in Verilog using case-based behavioral modeling, with 4 log
 ## Result
 The SimVision waveform shows `y` matching the expected value for all 8 opcodes.
 
-![Waveform](waveform_simvision.png)
+![Waveform](32bit-alu_if.png)
 
 ## Files
 - `rtl/alu_case.v`: design (`alu_case`)
 - `tb/alu_case_tb.v`: testbench (`alu_case_tb`)
-- `waveform_simvision.png`: SimVision waveform
+- `32bit-alu_if.png`: SimVision waveform
 
 ## Tools
 Verilog, Cadence NC-Verilog, Cadence SimVision
