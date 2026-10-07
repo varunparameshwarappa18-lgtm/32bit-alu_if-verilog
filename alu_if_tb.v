@@ -1,0 +1,27 @@
+// Testbench: steps through all 8 ALU opcodes with fixed operands
+module alu_if_tb;
+
+  reg  [31:0] a;
+  reg  [31:0] b;
+  reg  [2:0]  f;
+  wire [31:0] y;
+
+  alu_if a1(y, a, b, f);
+
+  initial
+  begin
+    a = 32'h00000000;
+    b = 32'hFFFFFFFF;
+
+    f = 3'b000;
+    #10 f = 3'b001;
+    #10 f = 3'b010;
+    #10 f = 3'b011;
+    #10 f = 3'b100;
+    #10 f = 3'b101;
+    #10 f = 3'b110;
+    #10 f = 3'b111;
+    #10;
+  end
+
+endmodule
