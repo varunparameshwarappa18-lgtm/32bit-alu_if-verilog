@@ -35,12 +35,12 @@ A case-based version of the same ALU is in a separate repository: https://github
 ## Result
 The SimVision waveform shows `y` matching the expected value for each opcode.
 
-![Waveform](waveform_simvision.png)
+![Waveform](32bit-alu_if.png)
 
 ## Files
 - `rtl/alu_if.v`: design (`alu_if`)
 - `tb/alu_if_tb.v`: testbench (`alu_if_tb`)
-- `waveform_simvision.png`: SimVision waveform
+- `32bit-alu_if.png`: SimVision waveform
 
 ## Tools
 Verilog, Cadence NC-Verilog, Cadence SimVision
